@@ -17,9 +17,9 @@ Example tile: `http://b.tile.openstreetmap.org/16/37096/25278.png`
 
 ![1](http://b.tile.openstreetmap.org/16/37096/25278.png) 
 
-## Sending a query to the user
+## Sending a query to the server
 
-Since we are using Javascript for the web application, the default way to communicate from the client (javascript - web application) to the server (c++ - server side) is with **Websockets**. If you don't already know about them, please look it up.
+Since we are using Javascript for the web application, the default way to communicate between the client (javascript - web application) and the server (c++ - server side) is with **Websockets**. If you don't already know about them, please look it up. **Websockets** are built-in Javascript, but not built-in C++. More info [here](https://github.com/outerpixels/routing-engine-backend).
 
 When the user performs certain actions in the website, for example adding/moving/deleting nodes, we send a query to the `server-side`. The **query** format we follow right now is really simple, for example:
 
