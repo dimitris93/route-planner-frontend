@@ -32,4 +32,4 @@ Example shortest path response: `38.0006897 23.7785669 38.0007352 23.7785848 38.
 
 ## Drawing the shortest path
 
-After the **response** is received from the client, we make use of the **leaflet** API one more time to render the shortest path (or in other words update the `polyline`) to the screen.
+After the **response** is received from the client, we make use of the **leaflet** API one more time to render the shortest path (or in other words update the `polyline`) on the screen.
