@@ -29,3 +29,7 @@ Example query: `38.0006436 23.7786841 38.0022161 23.7793064`
 The message we get in **response** from the c++ application after the shortest path algorithm is computed, is the **nodes sequence of the shortest path**. The message we receive is in the same format as the query we sent, only this time we have a lot more nodes, each 2 adjacent nodes basically represent an edge in the shortest path. For example, here is a **response** from the server.
 
 Example shortest path response: `38.0006897 23.7785669 38.0007352 23.7785848 38.0009246 23.7786363 38.0012873 23.7786724 38.0013635 23.7793300 38.0017295 23.7791770 38.0019797 23.7790311 38.0022526 23.7792636`
+
+## Drawing the shortest path
+
+After the **response** is received from the client, we make use of the **leaflet** API one more time to render the shortest path (or in other words update the `polyline`) to the screen.
