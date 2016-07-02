@@ -6,7 +6,7 @@ This website is the front-end of our routing engine.
 
 We use the **leaflet** javascript API to draw (or render) the map on the screen. This framework is really simple at its core, it simply fetches 256x256 .png images (in other words, tiles) which are placed side-by-side to show the correct part of the map. Depending on the zoom level and the view we set in our map, the API fetches the images necessary to fill the user's screen with tiles, in other words, draw the map. 
 
-This images are provided from many servers, aka **tile providers**, but we could download them locally on our server if we wanted to. Each tile provider results in a slightly different "style" or "theme" to the map. [Here](https://leaflet-extras.github.io/leaflet-providers/preview/) is a great website where you can preview how the tiles of various tile providers look like.
+These images are provided from many servers, aka **tile providers**, but we could download them locally on our server if we wanted to. Each tile provider results in a slightly different "style" or "theme" to the map. [Here](https://leaflet-extras.github.io/leaflet-providers/preview/) is a great website where you can preview how the tiles of various tile providers look like.
 
 Also, the tile providers follow kind of a "common protocol", meaning that they store the tiles in very specific folders, with specific names, so that they are accessible from many different APIs and frameworks that want to offer map-rendering functionality.
 
